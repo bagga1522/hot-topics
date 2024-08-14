@@ -1,0 +1,445 @@
+/* Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Fonts
+dm sans 
+roboto
+
+
+colors
+blue- 4ee4e9
+red-#e24a75
+black-#000000
+grey-#1c1c1c*/
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem; 
+    line-height: 1.5; 
+    background-color: #000000;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e24a75;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; 
+    flex-direction: column; 
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+nav {
+    width: 100%; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 0.75rem;
+}
+
+nav ul li a {
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    color: #f7658c;
+    font-weight: bold;
+    position: relative;
+    font-size: 1rem;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #4ee4e9;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.masthead {
+    font-family: "DM Sans", sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    background-size: cover;
+    background-image: url('../img/moneymoney2.jpg');
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    background-position: center;
+    font-size: 0.67rem;
+    height: 80px; 
+    width: 100%; 
+}
+
+.masthead h1 {
+    margin-top: 1.6rem;
+}
+
+/* Main Styles */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding-bottom: 4rem; 
+}
+
+h4 {
+    font-family: "DM Sans", sans-serif;
+    color: #4abee2;
+}
+
+/* Grid Layout for Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    margin: 1rem;
+    background-color: #1c1c1c;
+    border: 2px solid #e5e2e3;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    transition: transform 0.3s;
+    text-align: left;
+    height: 100%; 
+}
+
+.card figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90%; 
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.card figure img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.card figcaption {
+    color: #00ffae;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #1E1E1E;
+    border-bottom: 1px solid #00FFCC;
+    width: 100%;
+    text-align: center;
+    height: 10%; 
+}
+
+footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.5;
+}
+
+footer ul li {
+    font-family: "roboto", sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    align-items: left;
+    margin-right: 40px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ffffff;
+}
+
+.article {
+    float: left;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #4A90E2;
+}
+
+/* Social Media Links */
+footer .social-media a {
+    margin: 0 1rem;
+    color: #4A90E2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #E94E77;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 1rem; 
+}
+
+figure {
+    flex: 0 0 300px; 
+    margin-right: 1rem; 
+}
+
+p {
+    flex: 1; 
+    margin: 0;
+}
+
+.figcaption {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 35rem) {
+    body {
+        font-size: 0.75rem; 
+        line-height: 1.5;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    figure {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    p {
+        margin-top: 1rem;
+        clear: both;
+    }
+
+    
+
+    .source {
+        text-align: left;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 5px 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 35rem) and (max-width: 80rem) {
+    body {
+        font-size: 1rem; 
+        line-height: 1.5;
+    }
+
+    article {
+        display: block;
+        text-align: left;
+    }
+
+    figure {
+        float: left;
+        width: 300px; 
+        margin-right: 9rem; 
+        margin-bottom: 1rem; 
+    }
+
+    p {
+        margin: 2rem; 
+        
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 5px 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 80rem) {
+    body {
+        font-size: 1.25rem; 
+        line-height: 1.5;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .logo-link {
+        margin-left: 1rem;
+        grid-column: 1; 
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        grid-column: 2; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .masthead {
+        grid-column: 1 / -1; 
+        text-align: center;
+        font-size: 1.4em; 
+        height: 200px; 
+    }
+
+    .masthead h1 {
+        margin-top: 3.5rem;
+    }
+
+    article {
+        display: grid;
+        grid-template-rows: auto auto; 
+        gap: 1rem; 
+        margin-bottom: 2rem; 
+    }
+
+    article h2 {
+        grid-row: 1; 
+        margin: 0; 
+    }
+
+    article .content {
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        gap: 1rem; 
+    }
+
+    article figure {
+        margin: 0;
+        padding: 0;
+        grid-column: 1; 
+    }
+
+    article figure img {
+        width: 400px; 
+        height: auto;
+        object-fit: cover;
+    }
+
+    article p {
+        grid-column: 2; 
+        padding: 0 1rem; 
+    }
+
+    .source {
+        text-align: right;
+    }
+
+    .company-info {
+        margin-top: 1rem;
+        text-align: left;
+    }
+}
